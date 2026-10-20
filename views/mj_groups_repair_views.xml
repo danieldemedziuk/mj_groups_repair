@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_mj_groups_repair_form" model="ir.ui.view">
+        <field name="name">mj.groups.repair.form</field>
+        <field name="model">mj.groups.repair</field>
+        <field name="arch" type="xml">
+            <form string="Groups Repair">
+                <div class="alert alert-warning" role="alert">
+                    <strong>Take a database backup first.</strong>
+                    The repair cleans the new-user template, takes administrator
+                    rights off accounts copied from it and leaves Bypass HTML Field
+                    Sanitize with Settings administrators only. It decides its own
+                    scope - there is nothing to fill in. Use Preview to see what it
+                    would do without keeping anything.
+                </div>
+
+                <field name="output" nolabel="1" widget="text"
+                       class="font-monospace small"
+                       invisible="not output"/>
+
+                <footer>
+                    <button name="action_start" type="object"
+                            string="Start the repair" class="btn-primary"
+                            confirm="This changes user rights. Have you taken a backup?"/>
+                    <button name="action_preview" type="object"
+                            string="Preview" class="btn-secondary"/>
+                    <button string="Close" class="btn-secondary"
+                            special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_mj_groups_repair" model="ir.actions.act_window">
+        <field name="name">MJ Groups Repair</field>
+        <field name="res_model">mj.groups.repair</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <!-- Under Technical, and administrators only: it rewrites user rights. -->
+    <menuitem id="menu_mj_groups_repair"
+              name="MJ Groups Repair"
+              parent="base.menu_custom"
+              action="action_mj_groups_repair"
+              sequence="901"
+              groups="base.group_system"/>
+
+</odoo>

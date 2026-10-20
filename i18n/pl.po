@@ -1,0 +1,108 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mj_groups_repair
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-13 09:39+0000\n"
+"PO-Revision-Date: 2026-10-13 09:39+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mj_groups_repair
+#: model_terms:ir.ui.view,arch_db:mj_groups_repair.view_mj_groups_repair_form
+msgid ""
+"<strong>Take a database backup first.</strong>\n"
+"                    The repair cleans the new-user template, takes administrator\n"
+"                    rights off accounts copied from it and leaves Bypass HTML Field\n"
+"                    Sanitize with Settings administrators only. It decides its own\n"
+"                    scope - there is nothing to fill in. Use Preview to see what it\n"
+"                    would do without keeping anything."
+msgstr ""
+"<strong>Najpierw wykonaj kopię zapasową bazy.</strong>\n"
+"                    Naprawa czyści szablon nowego użytkownika, odbiera uprawnienia administratora\n"
+"                    kontom skopiowanym z tego szablonu i zostawia „Pomijanie sanityzacji pól HTML”\n"
+"                    wyłącznie administratorom Ustawień. Sama ustala swój zakres - nie ma czego\n"
+"                    wypełniać. Użyj Podglądu, aby zobaczyć, co zrobi, bez zapisywania zmian."
+
+#. module: mj_groups_repair
+#: model_terms:ir.ui.view,arch_db:mj_groups_repair.view_mj_groups_repair_form
+msgid "Close"
+msgstr "Zamknij"
+
+#. module: mj_groups_repair
+#: model:ir.model.fields,field_description:mj_groups_repair.field_mj_groups_repair__create_uid
+msgid "Created by"
+msgstr "Utworzone przez"
+
+#. module: mj_groups_repair
+#: model:ir.model.fields,field_description:mj_groups_repair.field_mj_groups_repair__create_date
+msgid "Created on"
+msgstr "Data utworzenia"
+
+#. module: mj_groups_repair
+#: model:ir.model.fields,field_description:mj_groups_repair.field_mj_groups_repair__display_name
+msgid "Display Name"
+msgstr "Nazwa wyświetlana"
+
+#. module: mj_groups_repair
+#: model_terms:ir.ui.view,arch_db:mj_groups_repair.view_mj_groups_repair_form
+msgid "Groups Repair"
+msgstr "Naprawa grup"
+
+#. module: mj_groups_repair
+#: model:ir.model,name:mj_groups_repair.model_mj_groups_repair
+msgid "Groups Repair (one-off)"
+msgstr "Naprawa grup (jednorazowa)"
+
+#. module: mj_groups_repair
+#: model:ir.model.fields,field_description:mj_groups_repair.field_mj_groups_repair__id
+msgid "ID"
+msgstr "ID"
+
+#. module: mj_groups_repair
+#: model:ir.model.fields,field_description:mj_groups_repair.field_mj_groups_repair__write_uid
+msgid "Last Updated by"
+msgstr "Ostatnio aktualizowane przez"
+
+#. module: mj_groups_repair
+#: model:ir.model.fields,field_description:mj_groups_repair.field_mj_groups_repair__write_date
+msgid "Last Updated on"
+msgstr "Data ostatniej aktualizacji"
+
+#. module: mj_groups_repair
+#. odoo-python
+#: code:addons/mj_groups_repair/models/mj_groups_repair.py:0
+#: model:ir.actions.act_window,name:mj_groups_repair.action_mj_groups_repair
+#: model:ir.ui.menu,name:mj_groups_repair.menu_mj_groups_repair
+#, python-format
+msgid "MJ Groups Repair"
+msgstr "MJ Naprawa grup"
+
+#. module: mj_groups_repair
+#: model_terms:ir.ui.view,arch_db:mj_groups_repair.view_mj_groups_repair_form
+msgid "Preview"
+msgstr "Podgląd"
+
+#. module: mj_groups_repair
+#: model:ir.model.fields,field_description:mj_groups_repair.field_mj_groups_repair__output
+msgid "Report"
+msgstr "Raport"
+
+#. module: mj_groups_repair
+#: model_terms:ir.ui.view,arch_db:mj_groups_repair.view_mj_groups_repair_form
+msgid "Start the repair"
+msgstr "Uruchom naprawę"
+
+#. module: mj_groups_repair
+#: model_terms:ir.ui.view,arch_db:mj_groups_repair.view_mj_groups_repair_form
+msgid "This changes user rights. Have you taken a backup?"
+msgstr ""
+"To zmienia uprawnienia użytkowników. Czy wykonano kopię zapasową bazy?"
